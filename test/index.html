@@ -4,9 +4,76 @@
   <meta charset="utf-8">
   <title>Consumir Indicadores Económicos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
+	<div class="container">
+		<h1>Indicadores Económicos</h1>
+		<br><br>
+		<table class="table table-striped table-hover" id="tabla">
+			<tr>
+				<th>Dólar</th>
+				<th>Euro</th>
+				<th>UF</th>
+				<th>UTM</th>
+			</tr>
+			<tr>
+				<td id="dolar"></td>
+				<td id="euro"></td>
+				<td id="uf"></td>
+				<td id="utm"></td>
+			</tr>
+		</table>
+		<br><br>
+		<div class="row">
+			<div class="col-md-6">
+				<form action="">
+	   				<div class="input-group">
+		      			<input id="pesos" type="text" class="form-control" placeholder="Ingresar valor en pesos">
+		      			<span class="input-group-btn">
+		      			<input id="boton_pesos" class="btn btn-default" type="submit" value="Convertir a Dolar / Euro">
+		      			</span>
+	    			</div>
+	    		</form>
+	    		<table class="table table-striped table-hover ocultar" id="conversion1">
+					<tr>
+						<td>Dólar</td>
+						<td>Euro</td>
+					</tr>
+					<tr>
+						<td id="conversion_dolar"></td>
+						<td id="conversion_euro"></td>
+					</tr>
+				</table>
+	  		</div>
+	  	</div>	
+
+	  	<br><br>
+
+	  	<div class="row">
+	  		<div class="col-md-6">
+	  			<form action="">
+		   			<div class="input-group">
+		      			<input id="aDolar" type="text" class="form-control" placeholder="Ingresar valor en dólares">
+		      			<span class="input-group-btn">
+		      			<input id="boton_dolar" class="btn btn-default" type="submit" value="Convertir Pesos">
+		      			</span>
+		      		</div>
+		      	</form>
+      			<table class="table table-striped table-hover ocultar" id="conversion2">
+				<tr>
+					<td>Peso Chileno</td>
+				</tr>
+				<tr>
+					<td id="conversion_peso"></td>
+				</tr>
+			</table>
+  		</div>
+	</div>
+</div>
+
+	
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
